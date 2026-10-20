@@ -20,20 +20,20 @@ export function Footer() {
                 M
               </div>
               <div className="flex flex-col">
-                <span className="text-base font-black tracking-tight leading-none text-white">
+                <span className="font-ornamental text-lg font-bold tracking-tight leading-none text-white uppercase">
                   MAQUI<span className="text-[#f6c400]">-RENT</span>
                 </span>
-                <span className="text-[9px] font-semibold tracking-wider text-white/50 uppercase">
+                <span className="font-editorial-sans text-[9px] font-bold tracking-[0.2em] text-white/50 uppercase mt-0.5">
                   Equipos CAT<span className="text-[#f6c400]">®</span> Colombia
                 </span>
               </div>
             </a>
 
-            <p className="mt-4 text-xs leading-relaxed text-white/60">
+            <p className="mt-4 text-xs leading-relaxed text-white/60 font-sans">
               Soluciones integrales de alquiler y venta de maquinaria pesada Caterpillar para minería, obras de infraestructura y construcción civil en todo el territorio colombiano.
             </p>
 
-            <div className="mt-6 flex items-center gap-2 text-xs text-emerald-400 font-semibold">
+            <div className="mt-6 flex items-center gap-2 text-xs text-emerald-400 font-semibold font-sans">
               <ShieldCheck className="size-4" />
               <span>RUNT y Pólizas Vigentes</span>
             </div>
@@ -41,7 +41,7 @@ export function Footer() {
 
           {/* Col 2: Navigation Links */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6c400] mb-4">
+            <h4 className="font-editorial-sans text-[11px] font-bold uppercase tracking-[0.2em] text-[#f6c400] mb-4">
               Navegación Rápida
             </h4>
             <ul className="space-y-2.5 text-xs text-white/70">
@@ -76,10 +76,10 @@ export function Footer() {
 
           {/* Col 3: Patios & Cobertura */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6c400] mb-4">
+            <h4 className="font-editorial-sans text-[11px] font-bold uppercase tracking-[0.2em] text-[#f6c400] mb-4">
               Patios de Operación
             </h4>
-            <ul className="space-y-3 text-xs text-white/70">
+            <ul className="space-y-3 text-xs text-white/70 font-sans">
               <li className="flex items-start gap-2">
                 <MapPin className="size-3.5 text-[#f6c400] shrink-0 mt-0.5" />
                 <span><strong>Bogotá D.C.:</strong> Autopista Medellín Km 3.5, Corredor Industrial Cota</span>
@@ -101,7 +101,7 @@ export function Footer() {
 
           {/* Col 4: Línea de Emergencias y Redes */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#f6c400] mb-4">
+            <h4 className="font-editorial-sans text-[11px] font-bold uppercase tracking-[0.2em] text-[#f6c400] mb-4">
               Atención 24/7
             </h4>
             <div className="space-y-3 text-xs text-white/70">

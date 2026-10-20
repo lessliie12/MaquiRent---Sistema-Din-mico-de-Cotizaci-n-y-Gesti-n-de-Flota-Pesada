@@ -177,18 +177,18 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
               </div>
 
               <div>
-                <span className="inline-block rounded-full bg-[#f6c400] px-3 py-0.5 text-[10px] font-black uppercase text-[#141719] mb-2">
+                <span className="inline-block rounded-full bg-[#f6c400] px-3 py-0.5 text-[10px] font-black uppercase text-[#141719] mb-2 font-editorial-sans tracking-wider">
                   Línea Especializada CAT®
                 </span>
-                <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
+                <h3 className="text-3xl sm:text-5xl font-ornamental font-bold text-white tracking-tight uppercase">
                   {activeCategoryMeta.name}
                 </h3>
-                <p className="mt-1 text-sm font-semibold text-[#f6c400]">
+                <p className="mt-2 text-sm font-bold text-[#f6c400] font-editorial-sans uppercase tracking-wider">
                   {activeCategoryMeta.tagline}
                 </p>
               </div>
 
-              <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl">
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed max-w-2xl font-sans">
                 {activeCategoryMeta.description}
               </p>
 
@@ -204,7 +204,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                   <ExternalLink className="size-3.5" />
                 </a>
 
-                <div className="flex items-center gap-3 text-xs text-white/60">
+                <div className="flex items-center gap-3 text-xs text-white/60 font-sans">
                   <span className="inline-flex items-center gap-1 text-emerald-400 font-semibold">
                     <span className="size-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     Disponibilidad en patios Colombia
@@ -223,7 +223,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                   alt={activeCategoryMeta.name}
                   className="w-full h-44 object-contain rounded-xl hover:scale-105 transition duration-500"
                 />
-                <div className="absolute bottom-3 left-3 right-3 text-center rounded-lg bg-black/70 backdrop-blur-sm py-1 px-2 text-[10px] font-bold text-white/90">
+                <div className="absolute bottom-3 left-3 right-3 text-center rounded-lg bg-black/70 backdrop-blur-sm py-1 px-2 text-[10px] font-bold text-white/90 font-editorial-sans uppercase tracking-wider">
                   Modelo Representativo CAT®
                 </div>
               </div>
@@ -234,7 +234,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
           {availableSubtypes.length > 0 && (
             <div className="border-t border-white/10 bg-black/40 px-6 py-4">
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#f6c400] shrink-0">
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#f6c400] shrink-0 font-editorial-sans">
                   <Layers className="size-4" /> Seleccionar Tipo de Máquina:
                 </div>
 
@@ -248,7 +248,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                       <button
                         key={st}
                         onClick={() => setActiveSubtype(st)}
-                        className={`rounded-full px-4 py-1.5 text-xs font-bold transition ${
+                        className={`rounded-full px-4 py-1.5 text-xs font-bold transition font-sans ${
                           isSelected
                             ? 'bg-[#f6c400] text-[#141719] shadow-md ring-2 ring-white/20'
                             : 'bg-white/10 text-white/80 hover:bg-white/20 hover:text-white'
@@ -269,10 +269,10 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
       {activeCategory === 'Toda la maquinaria' && searchQuery === '' && (
         <div className="mb-12">
           <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-sm font-black uppercase tracking-wider text-[#8a9298] flex items-center gap-2">
+            <h3 className="text-xs font-black uppercase tracking-widest text-[#8a9298] flex items-center gap-2 font-editorial-sans">
               <Layers className="size-4 text-[#f6c400]" /> Familias de Maquinaria Caterpillar®
             </h3>
-            <span className="text-xs text-[#8a9298]">Selecciona una categoría para explorar sus tipos</span>
+            <span className="text-xs text-[#8a9298] font-sans">Selecciona una categoría para explorar sus tipos</span>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -284,7 +284,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                   className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-[#e1e4e6] bg-white p-4 text-left transition duration-200 hover:-translate-y-0.5 hover:border-[#f6c400] hover:shadow-lg"
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <span className="rounded-full bg-[#f6c400]/15 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-[#8a6800]">
+                    <span className="rounded-full bg-[#f6c400]/15 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-[#8a6800] font-editorial-sans">
                       Línea CAT®
                     </span>
                     <ArrowRight className="size-4 text-[#8a9298] transition group-hover:translate-x-1 group-hover:text-[#141719]" />
@@ -299,10 +299,10 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-black text-[#141719] group-hover:text-[#9e7600] transition">
+                    <h4 className="font-ornamental text-base font-bold uppercase tracking-tight text-[#141719] group-hover:text-[#9e7600] transition">
                       {cat.name}
                     </h4>
-                    <p className="mt-1 text-[11px] text-[#5a6268] line-clamp-1">
+                    <p className="mt-1 text-[11px] text-[#5a6268] line-clamp-1 font-sans">
                       {cat.tagline}
                     </p>
                   </div>
@@ -467,20 +467,20 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                   {/* Card Content */}
                   <div className="p-6">
                     <div className="flex items-center justify-between gap-2">
-                      <p className="text-[11px] font-bold uppercase tracking-widest text-[#8a9298]">
+                      <p className="font-editorial-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#8a9298]">
                         {machine.type}
                       </p>
                       {machine.subtype && (
-                        <span className="rounded-full bg-[#f4f5f6] px-2.5 py-0.5 text-[10px] font-bold text-[#5a6268]">
+                        <span className="rounded-full bg-[#f4f5f6] px-2.5 py-0.5 text-[10px] font-bold text-[#5a6268] font-editorial-sans uppercase tracking-wider">
                           {machine.subtype}
                         </span>
                       )}
                     </div>
 
-                    <h3 className="mt-1 text-xl font-extrabold tracking-tight text-[#141719]">
+                    <h3 className="mt-2 text-2xl font-ornamental font-bold uppercase tracking-tight text-[#141719] leading-tight">
                       {machine.name}
                     </h3>
-                    <p className="mt-2 text-xs text-[#5a6268] leading-relaxed line-clamp-2">
+                    <p className="mt-2 text-xs text-[#5a6268] leading-relaxed line-clamp-2 font-sans">
                       {machine.detail}
                     </p>
 
@@ -496,7 +496,7 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                     )}
 
                     {/* Features and Specs Chips */}
-                    <div className="mt-4 flex flex-wrap gap-1.5">
+                    <div className="mt-4 flex flex-wrap gap-1.5 font-sans">
                       <span className="rounded-md bg-[#f4f5f6] px-2 py-1 text-[10px] font-semibold text-[#5a6268] flex items-center gap-1">
                         <Zap className="size-3 text-[#f6c400]" /> {machine.specs.power}
                       </span>
@@ -526,22 +526,23 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                 <div className="border-t border-[#edf0f1] p-6 bg-[#fafafa]">
                   <div className="flex items-baseline justify-between mb-4">
                     <div>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[#8a9298] block">
+                      <span className="font-editorial-sans text-[10px] font-bold uppercase tracking-[0.15em] text-[#8a9298] block">
                         Alquiler diario desde
                       </span>
-                      <span className="text-xl font-black text-[#141719]">
+                      <span className="font-ornamental text-2xl font-bold text-[#141719] block tracking-tight">
                         {formatCOP(machine.dailyRate)}
                       </span>
-                      <span className="text-[10px] text-[#8a9298] block">+ IVA</span>
+                      <span className="text-[10px] text-[#8a9298] block font-sans">+ IVA oficial</span>
                     </div>
 
                     <div className="text-right">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[#8a9298] block">
+                      <span className="font-editorial-sans text-[10px] font-bold uppercase tracking-[0.15em] text-[#8a9298] block">
                         Tarifa Mensual
                       </span>
-                      <span className="text-xs font-bold text-[#2e7d32]">
+                      <span className="font-ornamental text-base font-bold text-[#2e7d32] block">
                         {formatCOP(machine.monthlyRate)}
                       </span>
+                      <span className="text-[10px] text-emerald-700 font-semibold block font-sans">Descuento obra</span>
                     </div>
                   </div>
 
@@ -623,20 +624,20 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
                             className="size-12 rounded-lg object-contain bg-[#f0f2f3] p-1 shrink-0"
                           />
                           <div>
-                            <div className="font-extrabold text-[#141719] text-sm">{machine.name}</div>
-                            <div className="text-[10px] text-[#8a9298]">{machine.availability}</div>
+                            <div className="font-ornamental uppercase font-bold text-[#141719] text-base tracking-tight">{machine.name}</div>
+                            <div className="text-[10px] text-[#8a9298] font-sans">{machine.availability}</div>
                           </div>
                         </div>
                       </td>
-                      <td className="p-4">
+                      <td className="p-4 font-sans">
                         <span className="font-semibold text-[#141719] block">{machine.type}</span>
                         <span className="text-[10px] text-[#5a6268]">{machine.subtype}</span>
                       </td>
-                      <td className="p-4 font-semibold text-[#5a6268]">{machine.specs.power}</td>
-                      <td className="p-4 font-semibold text-[#5a6268]">{machine.specs.operatingWeight}</td>
-                      <td className="p-4 font-bold text-[#141719]">{keyCapacity}</td>
-                      <td className="p-4 font-black text-[#141719]">{formatCOP(machine.dailyRate)}</td>
-                      <td className="p-4 font-bold text-emerald-700">{formatCOP(machine.monthlyRate)}</td>
+                      <td className="p-4 font-semibold text-[#5a6268] font-sans">{machine.specs.power}</td>
+                      <td className="p-4 font-semibold text-[#5a6268] font-sans">{machine.specs.operatingWeight}</td>
+                      <td className="p-4 font-bold text-[#141719] font-sans">{keyCapacity}</td>
+                      <td className="p-4 font-ornamental font-bold text-[#141719] text-base">{formatCOP(machine.dailyRate)}</td>
+                      <td className="p-4 font-ornamental font-bold text-emerald-700 text-sm">{formatCOP(machine.monthlyRate)}</td>
                       <td className="p-4 text-right">
                         <div className="inline-flex items-center gap-2">
                           <button

@@ -101,24 +101,37 @@ export function MachineDetailModal({ machine, onClose, onAddToQuote }: MachineDe
             </div>
 
             <div>
-              <h2 className="text-2xl sm:text-3xl font-black">{machine.name}</h2>
-              <p className="mt-2 text-sm text-white/70 leading-relaxed">{machine.description}</p>
+              <span className="font-editorial-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#f6c400] block mb-1">
+                {machine.type} {machine.subtype ? `· ${machine.subtype}` : ''}
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-ornamental font-bold uppercase tracking-tight text-white leading-tight">
+                {machine.name}
+              </h2>
+              <p className="mt-2 text-sm text-white/70 leading-relaxed font-sans">{machine.description}</p>
 
               {/* Pricing Cards */}
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <div className="rounded-xl bg-[#24292c] p-4 border border-white/10">
-                  <span className="text-[10px] uppercase font-bold text-white/50 block">Alquiler por Día</span>
-                  <span className="text-xl font-black text-[#f6c400]">{formatCOP(machine.dailyRate)}</span>
-                  <span className="text-[10px] text-white/40 block mt-0.5">Mínimo 8 horas de turno</span>
+                  <span className="font-editorial-sans text-[10px] uppercase font-bold text-white/50 block tracking-wider">
+                    Alquiler por Día
+                  </span>
+                  <span className="font-ornamental text-2xl font-bold text-[#f6c400] block tracking-tight">
+                    {formatCOP(machine.dailyRate)}
+                  </span>
+                  <span className="text-[10px] text-white/40 block mt-0.5 font-sans">Mínimo 8 horas de turno</span>
                 </div>
                 <div className="rounded-xl bg-[#24292c] p-4 border border-white/10">
-                  <span className="text-[10px] uppercase font-bold text-white/50 block">Tarifa Mensual estimada</span>
-                  <span className="text-xl font-black text-white">{formatCOP(machine.monthlyRate)}</span>
-                  <span className="text-[10px] text-emerald-400 block mt-0.5">Incluye descuento por obra</span>
+                  <span className="font-editorial-sans text-[10px] uppercase font-bold text-white/50 block tracking-wider">
+                    Tarifa Mensual estimada
+                  </span>
+                  <span className="font-ornamental text-2xl font-bold text-white block tracking-tight">
+                    {formatCOP(machine.monthlyRate)}
+                  </span>
+                  <span className="text-[10px] text-emerald-400 block mt-0.5 font-sans">Incluye descuento por obra</span>
                 </div>
               </div>
 
-              <div className="mt-3 text-xs text-white/50">
+              <div className="mt-3 text-xs text-white/50 font-sans">
                 * Precio de referencia de venta: <span className="text-white/80 font-semibold">{machine.salePrice}</span>
               </div>
             </div>

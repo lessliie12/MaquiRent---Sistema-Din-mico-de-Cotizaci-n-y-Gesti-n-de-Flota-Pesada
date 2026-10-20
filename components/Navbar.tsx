@@ -51,17 +51,17 @@ export function Navbar({ quoteCount, onOpenQuoteDrawer, onOpenQuickQuote }: Navb
             M
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-black tracking-tight leading-none">
+            <span className="font-ornamental text-xl font-bold tracking-tight leading-none text-white uppercase">
               MAQUI<span className="text-[#f6c400]">-RENT</span>
             </span>
-            <span className="text-[10px] font-semibold tracking-wider text-white/50 uppercase">
+            <span className="font-editorial-sans text-[9px] font-bold tracking-[0.2em] text-white/60 uppercase mt-0.5">
               Equipos CAT<span className="text-[#f6c400]">®</span> Colombia
             </span>
           </div>
         </a>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden items-center gap-7 text-xs font-semibold uppercase tracking-wider text-white/80 md:flex">
+        <nav className="hidden items-center gap-7 text-[11px] font-bold uppercase tracking-[0.15em] text-white/80 md:flex font-editorial-sans">
           <a href="#equipment" className="hover:text-[#f6c400] transition">Maquinaria</a>
           <a href="#calculator" className="hover:text-[#f6c400] transition flex items-center gap-1">
             Calculadora

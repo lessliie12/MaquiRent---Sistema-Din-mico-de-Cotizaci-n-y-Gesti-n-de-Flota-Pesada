@@ -60,7 +60,9 @@ export function QuoteDrawer({
           <div className="flex items-center justify-between border-b border-white/10 px-6 py-5 bg-[#141719]">
             <div className="flex items-center gap-2">
               <ShoppingBag className="size-5 text-[#f6c400]" />
-              <h2 className="text-base font-black">Mi Bolsa de Cotización ({items.length})</h2>
+              <h2 className="font-ornamental text-lg font-bold uppercase tracking-tight text-white">
+                Mi Bolsa de Cotización ({items.length})
+              </h2>
             </div>
             <button
               onClick={onClose}
@@ -102,11 +104,11 @@ export function QuoteDrawer({
                   >
                     <div className="flex items-start justify-between">
                       <div>
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-[#f6c400]">
+                        <span className="font-editorial-sans text-[10px] font-bold uppercase tracking-wider text-[#f6c400]">
                           {item.machineType}
                         </span>
-                        <h4 className="font-extrabold text-sm text-white">{item.machineName}</h4>
-                        <span className="text-xs text-white/60">
+                        <h4 className="font-ornamental uppercase font-bold text-base text-white tracking-tight">{item.machineName}</h4>
+                        <span className="text-xs text-white/60 font-sans">
                           Tarifa: {formatCOP(item.dailyRate)} / día
                         </span>
                       </div>
@@ -182,9 +184,9 @@ export function QuoteDrawer({
                   <span>IVA estimado (19%):</span>
                   <span>{formatCOP(iva)}</span>
                 </div>
-                <div className="flex justify-between text-sm font-black text-white pt-2 border-t border-white/10">
-                  <span>Total Estimado:</span>
-                  <span className="text-lg text-[#f6c400]">{formatCOP(total)}</span>
+                <div className="flex justify-between items-baseline pt-2 border-t border-white/10 font-sans">
+                  <span className="text-xs font-bold uppercase tracking-wider text-white">Total Estimado:</span>
+                  <span className="font-ornamental text-2xl font-bold text-[#f6c400] tracking-tight">{formatCOP(total)}</span>
                 </div>
               </div>
 
