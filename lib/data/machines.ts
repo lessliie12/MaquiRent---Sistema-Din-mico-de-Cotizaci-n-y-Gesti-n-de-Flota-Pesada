@@ -249,7 +249,7 @@ export const machinesData: Machine[] = [
     slug: 'cat-336-excavadora-pesada',
     name: 'CAT 336 Excavadora Heavy Duty',
     type: 'Excavadoras',
-    subtype: 'Excavadoras Pesadas',
+    subtype: 'Excavadoras Grandes',
     dailyRate: 2850000,
     monthlyRate: 62000000,
     salePrice: '$1.120.000.000 – $1.320.000.000 COP',
@@ -356,16 +356,16 @@ export const machinesData: Machine[] = [
   {
     id: 'cat-d8t',
     slug: 'cat-d8t-tractor-pesado',
-    name: 'CAT D8T Tractor Dozer de Alta Capacidad',
+    name: 'CAT D8T Tractor Dozer Grande',
     type: 'Tractores Dozer',
-    subtype: 'Dozers Pesados',
+    subtype: 'Dozers Grandes',
     dailyRate: 3950000,
     monthlyRate: 86000000,
     salePrice: '$2.300.000.000 – $2.650.000.000 COP',
     detail: 'Potencia: 264 kW (354 HP) · Peso: 39.800 kg · Cuchilla Universal 8,7 m³',
     description: 'Fuerza masiva de empuje para minería, presas hidroeléctricas y cortes de suelo rocoso de gran envergadura. Tren de rodaje sobredimensionado y convertidor de par con embrague de traba.',
     image: '/images/cat-d6-dozer.png',
-    badge: 'Alto Tonelaje',
+    badge: 'Dozers Grandes',
     availability: 'Disponible en 48h',
     specs: {
       operatingWeight: '39.800 kg',
@@ -460,6 +460,41 @@ export const machinesData: Machine[] = [
       'Acopios de agregados en concesiones viales'
     ]
   },
+  {
+    id: 'cat-966m',
+    slug: 'cat-966m-cargador-grande',
+    name: 'CAT 966M Cargador de Ruedas Grande',
+    type: 'Cargadores',
+    subtype: 'Cargadores Grandes',
+    dailyRate: 2890000,
+    monthlyRate: 63000000,
+    salePrice: '$1.580.000.000 – $1.790.000.000 COP',
+    detail: 'Cucharón: 5,0 m³ · Potencia: 232 kW (311 HP) · Peso: 23.200 kg',
+    description: 'Cargador pesado de alta producción para canteras, puertos y plantas de cemento. Equipado con convertidor de par con embrague de traba y sistema Cat Payload.',
+    image: '/images/cat-966m-loader.png',
+    badge: 'Cargadores Grandes',
+    availability: 'Disponible en 24h',
+    specs: {
+      operatingWeight: '23.200 kg',
+      power: '232 kW (311 HP)',
+      bucketCapacity: '5,0 m³',
+      fuelCapacity: '313 L',
+      year: 2024,
+      engineModel: 'Cat C9.3 ACERT',
+      topSpeed: '39,5 km/h'
+    },
+    features: [
+      'Sistema de pesaje dinámico Cat CPM integrado de fábrica',
+      'Transmisión Powershift de 4 velocidades con cambio suave',
+      'Cabina premium con suspensión y aislamiento acústico',
+      'Ejes con diferenciales de deslizamiento limitado'
+    ],
+    idealFor: [
+      'Cargue intensivo de camiones mineros y volquetas doble troque',
+      'Operaciones en canteras de caliza y grava',
+      'Terminales marítimas de carbón y áridos'
+    ]
+  },
 
   // ===================== RETROEXCAVADORAS =====================
   {
@@ -537,18 +572,54 @@ export const machinesData: Machine[] = [
 
   // ===================== MINICARGADORES =====================
   {
+    id: 'cat-226d3',
+    slug: 'cat-226d3-minicargador-ruedas',
+    name: 'CAT 226D3 Minicargador de Ruedas',
+    type: 'Minicargadores',
+    subtype: 'Minicargadores de Ruedas',
+    dailyRate: 780000,
+    monthlyRate: 16900000,
+    salePrice: '$290.000.000 – $330.000.000 COP',
+    detail: 'Capacidad nominal: 703 kg · Ruedas neumáticas 10x16.5 · Potencia: 49,6 kW (67 HP)',
+    description: 'Minicargador ágil de ruedas para sótanos de edificios, bodegas y pavimentación urbana. Su radio de giro cero y diseño compacto permiten trabajar en pasillos estrechos.',
+    image: '/images/cat-226d3-skidsteer.png',
+    badge: 'Minicargadores de Ruedas',
+    availability: 'Inmediata',
+    specs: {
+      operatingWeight: '2.653 kg',
+      power: '49,6 kW (67 HP)',
+      bucketCapacity: '0,40 m³',
+      fuelCapacity: '57 L',
+      year: 2024,
+      engineModel: 'Cat C2.2 Turbo',
+      topSpeed: '17,8 km/h',
+      payload: '703 kg'
+    },
+    features: [
+      'Controles electrohidráulicos integrados en el asiento del operador',
+      'Cabina sellada y presurizada con aire acondicionado',
+      'Acoplador rápido de herramientas universal Cat',
+      'Cámara de visión trasera de alta definición'
+    ],
+    idealFor: [
+      'Limpieza y nivelación en sótanos de parqueaderos',
+      'Cargue de escombros en volquetas sencillas',
+      'Mantenimiento de zonas verdes y obras residenciales'
+    ]
+  },
+  {
     id: 'cat-259d3',
     slug: 'cat-259d3-cargador-compacto-orugas',
     name: 'CAT 259D3 Cargador Compacto de Orugas (CTL)',
     type: 'Minicargadores',
-    subtype: 'Orugas Compactas CTL',
+    subtype: 'Cargadores Compactos de Orugas',
     dailyRate: 990000,
     monthlyRate: 21800000,
     salePrice: '$390.000.000 – $445.000.000 COP',
     detail: 'Capacidad nominal: 1.330 kg · Orugas de caucho · Potencia: 55,4 kW (74 HP)',
     description: 'Excelente flotación y tracción sobresaliente en lodo, pendientes resbaladizas y arena. Su tren de orugas con suspensión por barra de torsión proporciona un viaje suave y protección del suelo.',
     image: '/images/cat-259d3-skidsteer.png',
-    badge: 'Alta Flotación',
+    badge: 'Cargadores de Orugas',
     availability: 'Inmediata',
     specs: {
       operatingWeight: '4.076 kg',
@@ -575,18 +646,53 @@ export const machinesData: Machine[] = [
 
   // ===================== MOTONIVELADORAS =====================
   {
-    id: 'cat-140',
-    slug: 'cat-140-motoniveladora',
-    name: 'CAT 140 Motoniveladora con Cat Cross Slope',
+    id: 'cat-120',
+    slug: 'cat-120-motoniveladora-vial',
+    name: 'CAT 120 Motoniveladora Vial Eficiente',
     type: 'Motoniveladoras',
     subtype: 'Motoniveladoras Viales',
+    dailyRate: 2150000,
+    monthlyRate: 47000000,
+    salePrice: '$1.150.000.000 – $1.320.000.000 COP',
+    detail: 'Potencia: 108 kW (145 HP) · Vertedera: 3,7 m · Peso: 14.200 kg',
+    description: 'La máquina de conformación vial predilecta para municipios y concesiones terciarias. Ofrece bajo consumo y excelente radio de giro para trazados de caminos rurales.',
+    image: '/images/cat-140-grader.png',
+    badge: 'Motoniveladoras Viales',
+    availability: 'Inmediata',
+    specs: {
+      operatingWeight: '14.200 kg',
+      power: '108 kW (145 HP)',
+      fuelCapacity: '246 L',
+      year: 2024,
+      engineModel: 'Cat C7.1',
+      topSpeed: '45 km/h',
+      bladeCapacity: '3,7 m de vertedera con giro 360°'
+    },
+    features: [
+      'Controles de palanca tradicionales o joysticks electrohidráulicos',
+      'Círculo de giro con embrague de deslizamiento para protección contra impactos',
+      'Escarificador frontal de 5 dientes para sub-bases granulares',
+      'Cabina panorámica con vidrios tintados y aire acondicionado'
+    ],
+    idealFor: [
+      'Mantenimiento periódico de vías terciarias y rurales',
+      'Escarificado y reperfilado de caminos de acceso en fincas y parcelaciones',
+      'Nivelación de rasantes en plataformas de bodegas'
+    ]
+  },
+  {
+    id: 'cat-140',
+    slug: 'cat-140-motoniveladora',
+    name: 'CAT 140 Motoniveladora Pesada con Cat Cross Slope',
+    type: 'Motoniveladoras',
+    subtype: 'Motoniveladoras Pesadas',
     dailyRate: 2650000,
     monthlyRate: 58000000,
     salePrice: '$1.380.000.000 – $1.590.000.000 COP',
     detail: 'Potencia: 147 kW (197 HP) · Vertedera: 4,3 m · Peso: 17.500 kg',
     description: 'El referente indiscutible en ingeniería vial colombiana. Equipada con transmisión servoasistida Powershift de 8 adelante y 6 atrás, y sistema Cat Cross Slope para control automático de la pendiente transversal.',
     image: '/images/cat-140-grader.png',
-    badge: 'Precisión Milimétrica',
+    badge: 'Motoniveladoras Pesadas',
     availability: 'Inmediata',
     specs: {
       operatingWeight: '17.500 kg',
@@ -616,14 +722,14 @@ export const machinesData: Machine[] = [
     slug: 'cat-745-volqueta-articulada',
     name: 'CAT 745 Camión Articulado 6x6',
     type: 'Volquetas y Camiones',
-    subtype: 'Camiones Articulados 6x6',
+    subtype: 'Camiones Articulados',
     dailyRate: 3600000,
     monthlyRate: 78000000,
     salePrice: '$1.950.000.000 – $2.160.000.000 COP',
     detail: 'Carga útil: 45,2 t (25 m³) · Potencia: 381 kW (511 HP) · Tracción total 6x6',
     description: 'Diseñado para terrenos agrestes, barro extremo y pendientes pronunciadas en canteras y megaproyectos. Su tracción automática ATC y retardo hidráulico brindan máxima seguridad.',
     image: '/images/cat-745-hauler.png',
-    badge: 'Alto Rendimiento',
+    badge: 'Camiones Articulados',
     availability: 'Inmediata',
     specs: {
       operatingWeight: '33.400 kg (vacío) / 78.600 kg (cargado)',
@@ -649,7 +755,7 @@ export const machinesData: Machine[] = [
   {
     id: 'cat-777',
     slug: 'cat-777-camion-minero',
-    name: 'CAT 777G Camión Fuera de Carretera Minero',
+    name: 'CAT 777G Camión Minero Fuera de Carretera',
     type: 'Volquetas y Camiones',
     subtype: 'Camiones Mineros Fuera de Carretera',
     dailyRate: 7200000,
@@ -688,14 +794,14 @@ export const machinesData: Machine[] = [
     slug: 'cat-cs56b-compactador-suelo',
     name: 'CAT CS56B Rodillo Compactador de Suelos',
     type: 'Compactadores',
-    subtype: 'Rodillos de Suelo Liso',
+    subtype: 'Compactadores de Suelo',
     dailyRate: 1550000,
     monthlyRate: 33000000,
     salePrice: '$610.000.000 – $708.000.000 COP',
     detail: 'Ancho de tambor: 2.134 mm · Peso operativo: 10.900 kg · Medición MDP',
     description: 'Líder en compactación de sub-bases granulares, afirmados y terraplenes. Incluye sistema Cat Compaction Control (MDP) para medir la rigidez del suelo en tiempo real.',
     image: '/images/cat-cs56-compactor.png',
-    badge: 'Económico',
+    badge: 'Compactadores de Suelo',
     availability: 'Inmediata',
     specs: {
       operatingWeight: '10.900 kg (peso estático en tambor: 6.200 kg)',
@@ -718,6 +824,41 @@ export const machinesData: Machine[] = [
       'Cimentaciones industriales y presas de tierra'
     ]
   },
+  {
+    id: 'cat-cb25',
+    slug: 'cat-cb25-compactador-asfalto',
+    name: 'CAT CB2.5 Compactador en Tándem para Asfalto',
+    type: 'Compactadores',
+    subtype: 'Compactadores de Asfalto',
+    dailyRate: 890000,
+    monthlyRate: 19200000,
+    salePrice: '$310.000.000 – $360.000.000 COP',
+    detail: 'Doble tambor vibratorio: 1.000 mm · Peso: 2.500 kg · Sistema de rociado presurizado',
+    description: 'Compactador tándem vibratorio para capas de rodadura asfáltica, parqueaderos y ciclorrutas. Doble frecuencia de vibración y tambores compensados.',
+    image: '/images/cat-cb25-compactor.png',
+    badge: 'Compactadores de Asfalto',
+    availability: 'Inmediata',
+    specs: {
+      operatingWeight: '2.500 kg',
+      power: '22,9 kW (30,7 HP)',
+      drumWidth: '1.000 mm de ancho de tambor',
+      fuelCapacity: '35 L',
+      year: 2024,
+      engineModel: 'Cat C1.5',
+      topSpeed: '12 km/h'
+    },
+    features: [
+      'Sistema de rociado de agua presurizado con doble filtración',
+      'Doble tambor liso vibratorio con bordes biselados para evitar marcas',
+      'Puesto de mando con excelente visibilidad a los bordes del tambor',
+      'Rociador continuo o intermitente para ahorro de agua'
+    ],
+    idealFor: [
+      'Compactación final de asfalto en vías urbanas y parqueaderos',
+      'Bacheo y reparaciones de pavimento',
+      'Senderos peatonales y pistas deportivas'
+    ]
+  },
 
   // ===================== MANIPULADORES TELESCÓPICOS =====================
   {
@@ -732,7 +873,7 @@ export const machinesData: Machine[] = [
     detail: 'Capacidad máx.: 3.500 kg · Altura de elevación: 7,0 m · Alcance: 3,8 m',
     description: 'Máxima agilidad para elevación de estibas de mampostería, estructuras metálicas y vaciado en plantas altas. Dirección en las 4 ruedas con 3 modos: circular, delantera y cangrejo.',
     image: '/images/cat-th357-telehandler.png',
-    badge: '3 Modos Dirección',
+    badge: 'Construcción y Alcance',
     availability: 'Inmediata',
     specs: {
       operatingWeight: '8.400 kg',
@@ -756,6 +897,42 @@ export const machinesData: Machine[] = [
       'Montaje de estructuras metálicas y cerramientos perimetrales'
     ]
   },
+  {
+    id: 'cat-tl1255',
+    slug: 'cat-tl1255-manipulador-gran-altura',
+    name: 'CAT TL1255D Manipulador de Gran Altura',
+    type: 'Manipuladores Telescópicos',
+    subtype: 'Alta Capacidad de Carga',
+    dailyRate: 1850000,
+    monthlyRate: 40500000,
+    salePrice: '$690.000.000 – $760.000.000 COP',
+    detail: 'Capacidad máx.: 5.443 kg · Altura de elevación: 16,6 m · Estabilizadores hidráulicos',
+    description: 'Manipulador telescópico de gran altura y servicio pesado. Alcanza hasta 5 pisos con estabilizadores hidráulicos de fábrica y autonivelación de bastidor.',
+    image: '/images/cat-th357-telehandler.png',
+    badge: 'Alta Capacidad de Carga',
+    availability: 'Disponible en 24h',
+    specs: {
+      operatingWeight: '15.500 kg',
+      power: '106 kW (142 HP) Cat C4.4 ACERT',
+      fuelCapacity: '144 L',
+      year: 2024,
+      engineModel: 'Cat C4.4 ACERT',
+      topSpeed: '33 km/h',
+      liftCapacity: '5.443 kg (12.000 lb)',
+      maxReach: '16,6 m de elevación vertical / 12,8 m de alcance horizontal'
+    },
+    features: [
+      'Estabilizadores hidráulicos frontales para elevación segura a máxima altura',
+      'Nivelación hidráulica de chasis hasta 10 grados a cada lado',
+      'Pluma telescópica de 4 secciones de acero de alta resistencia',
+      'Cabina con protección FOPS/ROPS y mandos electrohidráulicos por joystick'
+    ],
+    idealFor: [
+      'Montaje de naves industriales de gran luz y altura',
+      'Colocación de cerramientos y paneles en edificios de más de 4 pisos',
+      'Operaciones portuarias e industriales pesadas'
+    ]
+  },
 
   // ===================== PAVIMENTACIÓN Y FRESADO =====================
   {
@@ -770,7 +947,7 @@ export const machinesData: Machine[] = [
     detail: 'Ancho de corte: 1.000 mm · Profundidad máx.: 330 mm · Potencia: 246 kW (330 HP)',
     description: 'Remoción de asfalto de alta precisión para rehabilitación vial. Tambor rotor de dientes de carburo de tungsteno y cinta transportadora de descarga orientable hacia volquetas.',
     image: '/images/cat-pm310-planer.png',
-    badge: 'Perfilado de Asfalto',
+    badge: 'Fresadoras en Frío',
     availability: 'Disponible en 24h',
     specs: {
       operatingWeight: '20.800 kg',
@@ -791,6 +968,41 @@ export const machinesData: Machine[] = [
       'Fresado de baches y huellas de deformación en vías 4G',
       'Adecuación de juntas y transiciones de puentes vehiculares',
       'Fresado alrededor de pozos de alcantarillado y bordillos urbanos'
+    ]
+  },
+  {
+    id: 'cat-ap555',
+    slug: 'cat-ap555-pavimentadora-asfalto',
+    name: 'CAT AP555F Pavimentadora de Asfalto sobre Orugas',
+    type: 'Pavimentación y Fresado',
+    subtype: 'Pavimentadoras de Asfalto',
+    dailyRate: 3400000,
+    monthlyRate: 75000000,
+    salePrice: '$1.650.000.000 – $1.900.000.000 COP',
+    detail: 'Ancho estándar: 2,55 m – 5,0 m · Regla calefactada eléctrica SE50 V · Potencia: 106 kW',
+    description: 'Pavimentadora de alta precisión sobre orugas de caucho Mobil-trac™. Su regla calefactada eléctrica proporciona un sellado y compactación inicial perfecta de la carpeta asfáltica.',
+    image: '/images/cat-pm310-planer.png',
+    badge: 'Pavimentadoras de Asfalto',
+    availability: 'Disponible en 24h',
+    specs: {
+      operatingWeight: '14.200 kg',
+      power: '106 kW (142 HP) Cat C4.4 ACERT',
+      fuelCapacity: '189 L',
+      year: 2024,
+      engineModel: 'Cat C4.4 ACERT',
+      topSpeed: '11 km/h',
+      millingWidth: 'Ancho de pavimentación: 2,55 m – 5,0 m (extensible a 8,0 m)'
+    },
+    features: [
+      'Regla con calefacción eléctrica de encendido rápido y bajo consumo',
+      'Sistema de orugas de caucho Mobil-trac para tracción suave y sin dañar la base',
+      'Consolas de operador duales e independientes de deslizamiento lateral',
+      'Tolva frontal de gran capacidad con plegado hidráulico independiente'
+    ],
+    idealFor: [
+      'Pavimentación de autopistas 4G/5G y vías departamentales',
+      'Pistas de aeropuertos y plataformas de carga pesada',
+      'Vías urbanas y circunvalares'
     ]
   }
 ];

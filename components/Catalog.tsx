@@ -49,10 +49,15 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
     return () => window.removeEventListener('maqui_fleet_updated', handleFleetUpdate);
   }, []);
 
-  // When changing category, reset the active subtype to "Todos"
+  // When changing category, reset the active subtype to the first item of that category
   const handleCategoryChange = (category: string) => {
     setActiveCategory(category);
-    setActiveSubtype('Todos');
+    if (category === 'Toda la maquinaria') {
+      setActiveSubtype('Todos');
+    } else {
+      const meta = categoriesMetadata.find((m) => m.id === category);
+      setActiveSubtype(meta?.subtypes[0] || 'Todos');
+    }
   };
 
   // Active category metadata if one is specifically selected
@@ -69,6 +74,8 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
 
   // Filtered machines
   const filteredMachines = useMemo(() => {
+    const norm = (s: string) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
     return machinesData
       .filter((machine) => {
         // Category check
@@ -79,9 +86,14 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
         const isAll =
           activeSubtype === 'Todos' ||
           activeSubtype === 'Todas' ||
-          activeSubtype.startsWith('Todos') ||
-          activeSubtype.startsWith('Todas');
-        const matchesSubtype = isAll || machine.subtype === activeSubtype;
+          activeSubtype.toLowerCase().startsWith('todo') ||
+          activeSubtype.toLowerCase().startsWith('toda');
+
+        const matchesSubtype =
+          isAll ||
+          machine.subtype === activeSubtype ||
+          norm(machine.subtype).includes(norm(activeSubtype)) ||
+          norm(activeSubtype).includes(norm(machine.subtype));
 
         // Search check
         const q = searchQuery.toLowerCase().trim();

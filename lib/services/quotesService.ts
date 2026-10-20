@@ -202,6 +202,34 @@ const INITIAL_FLEET_STATUS: MachineFleetControl[] = [
     horometerHours: 1890
   },
   {
+    machineId: 'cat-966m',
+    machineName: 'CAT 966M Cargador de Ruedas Grande',
+    status: 'Disponible',
+    locationCity: 'Patio Vía 40 (Barranquilla)',
+    horometerHours: 2150
+  },
+  {
+    machineId: 'cat-226d3',
+    machineName: 'CAT 226D3 Minicargador de Ruedas',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 640
+  },
+  {
+    machineId: 'cat-120',
+    machineName: 'CAT 120 Motoniveladora Vial Eficiente',
+    status: 'Disponible',
+    locationCity: 'Patio Yumbo (Valle)',
+    horometerHours: 1450
+  },
+  {
+    machineId: 'cat-cb25',
+    machineName: 'CAT CB2.5 Compactador en Tándem para Asfalto',
+    status: 'Disponible',
+    locationCity: 'Patio Itagüí (Medellín)',
+    horometerHours: 890
+  },
+  {
     machineId: 'cat-th357',
     machineName: 'CAT TH357D Manipulador Telescópico',
     status: 'Disponible',
@@ -209,11 +237,25 @@ const INITIAL_FLEET_STATUS: MachineFleetControl[] = [
     horometerHours: 1120
   },
   {
+    machineId: 'cat-tl1255',
+    machineName: 'CAT TL1255D Manipulador de Gran Altura',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 980
+  },
+  {
     machineId: 'cat-pm310',
     machineName: 'CAT PM310 Fresadora de Pavimento en Frío',
     status: 'Disponible',
     locationCity: 'Patio Central Cota (Bogotá)',
     horometerHours: 1420
+  },
+  {
+    machineId: 'cat-ap555',
+    machineName: 'CAT AP555F Pavimentadora de Asfalto sobre Orugas',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 1250
   }
 ];
 
