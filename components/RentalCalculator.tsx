@@ -100,10 +100,16 @@ export function RentalCalculator({ onApplyToQuote, onScrollToContact }: RentalCa
                 onChange={(e) => setSelectedMachineId(e.target.value)}
                 className="w-full rounded-xl border border-white/15 bg-[#141719] px-4 py-3.5 text-sm font-semibold text-white outline-none focus:border-[#f6c400] transition"
               >
-                {machinesData.map((m) => (
-                  <option key={m.id} value={m.id}>
-                    {m.name} — {formatCOP(m.dailyRate)} / día
-                  </option>
+                {Array.from(new Set(machinesData.map((m) => m.type))).map((cat) => (
+                  <optgroup key={cat} label={`── ${cat} ──`} className="bg-[#1c2022] text-[#f6c400] font-bold">
+                    {machinesData
+                      .filter((m) => m.type === cat)
+                      .map((m) => (
+                        <option key={m.id} value={m.id} className="bg-[#141719] text-white font-normal">
+                          {m.name} — {formatCOP(m.dailyRate)} / día
+                        </option>
+                      ))}
+                  </optgroup>
                 ))}
               </select>
             </div>

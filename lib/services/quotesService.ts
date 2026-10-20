@@ -81,34 +81,25 @@ const INITIAL_DEMO_QUOTES: QuoteRequest[] = [
 
 const INITIAL_FLEET_STATUS: MachineFleetControl[] = [
   {
+    machineId: 'cat-pl83',
+    machineName: 'CAT PL83 Tiendetubos Heavy-Duty',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 850
+  },
+  {
+    machineId: 'cat-pl72',
+    machineName: 'CAT PL72 Tiendetubos Mediano',
+    status: 'Disponible',
+    locationCity: 'Patio Yumbo (Valle)',
+    horometerHours: 1200
+  },
+  {
     machineId: 'cat-320',
     machineName: 'CAT 320 Excavadora Hidráulica',
     status: 'Disponible',
     locationCity: 'Patio Central Cota (Bogotá)',
     horometerHours: 2450
-  },
-  {
-    machineId: 'cat-745',
-    machineName: 'CAT 745 Camión Articulado',
-    status: 'Disponible',
-    locationCity: 'Patio Yumbo (Valle)',
-    horometerHours: 3120
-  },
-  {
-    machineId: 'cat-950',
-    machineName: 'CAT 950 Cargador de Ruedas',
-    status: 'En Obra',
-    currentProject: 'Consorcio Vial Andes - Girardot',
-    locationCity: 'Girardot, Cundinamarca',
-    returnDate: '2026-11-15',
-    horometerHours: 4210
-  },
-  {
-    machineId: 'cat-cs56b',
-    machineName: 'CAT CS56B Rodillo Compactador',
-    status: 'Disponible',
-    locationCity: 'Patio Itagüí (Medellín)',
-    horometerHours: 1890
   },
   {
     machineId: 'cat-336',
@@ -125,11 +116,104 @@ const INITIAL_FLEET_STATUS: MachineFleetControl[] = [
     maintenanceNotes: 'Equipo en banco de pruebas de presión hidráulica. Calibración de bomba completada al 80%. Salida proyectada para entrega el 24 de Octubre.'
   },
   {
+    machineId: 'cat-308',
+    machineName: 'CAT 308 CR Miniexcavadora Compacta',
+    status: 'Disponible',
+    locationCity: 'Patio Itagüí (Medellín)',
+    horometerHours: 920
+  },
+  {
+    machineId: 'cat-d6',
+    machineName: 'CAT D6 Tractor de Cadenas Dozer',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 1840
+  },
+  {
+    machineId: 'cat-d8t',
+    machineName: 'CAT D8T Tractor Dozer Pesado',
+    status: 'Disponible',
+    locationCity: 'Patio Vía 40 (Barranquilla)',
+    horometerHours: 3400
+  },
+  {
+    machineId: 'cat-745',
+    machineName: 'CAT 745 Camión Articulado',
+    status: 'Disponible',
+    locationCity: 'Patio Yumbo (Valle)',
+    horometerHours: 3120
+  },
+  {
+    machineId: 'cat-777',
+    machineName: 'CAT 777G Camión Minero Fuera de Carretera',
+    status: 'Disponible',
+    locationCity: 'Patio Vía 40 (Barranquilla)',
+    horometerHours: 4100
+  },
+  {
+    machineId: 'cat-950',
+    machineName: 'CAT 950 Cargador de Ruedas',
+    status: 'En Obra',
+    currentProject: 'Consorcio Vial Andes - Girardot',
+    locationCity: 'Girardot, Cundinamarca',
+    returnDate: '2026-11-15',
+    horometerHours: 4210
+  },
+  {
     machineId: 'cat-950gc',
     machineName: 'CAT 950 GC Cargador de Eficiencia',
     status: 'Disponible',
     locationCity: 'Patio Vía 40 (Barranquilla)',
     horometerHours: 1650
+  },
+  {
+    machineId: 'cat-420',
+    machineName: 'CAT 420 Retroexcavadora (Pivote Central)',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 1350
+  },
+  {
+    machineId: 'cat-426',
+    machineName: 'CAT 426F2 Retroexcavadora (Desplazamiento Lateral)',
+    status: 'Disponible',
+    locationCity: 'Patio Itagüí (Medellín)',
+    horometerHours: 1100
+  },
+  {
+    machineId: 'cat-259d3',
+    machineName: 'CAT 259D3 Cargador Compacto de Orugas (CTL)',
+    status: 'Disponible',
+    locationCity: 'Patio Itagüí (Medellín)',
+    horometerHours: 780
+  },
+  {
+    machineId: 'cat-140',
+    machineName: 'CAT 140 Motoniveladora con Cat Cross Slope',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 2100
+  },
+  {
+    machineId: 'cat-cs56b',
+    machineName: 'CAT CS56B Rodillo Compactador de Suelos',
+    status: 'Disponible',
+    locationCity: 'Patio Itagüí (Medellín)',
+    horometerHours: 1890
+  },
+  {
+    machineId: 'cat-th357',
+    machineName: 'CAT TH357D Manipulador Telescópico',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 1120
+  },
+  {
+    machineId: 'cat-pm310',
+    machineName: 'CAT PM310 Fresadora de Pavimento en Frío',
+    status: 'Disponible',
+    locationCity: 'Patio Central Cota (Bogotá)',
+    horometerHours: 1420
   }
 ];
 

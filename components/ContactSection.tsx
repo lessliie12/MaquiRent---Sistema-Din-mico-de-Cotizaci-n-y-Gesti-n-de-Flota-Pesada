@@ -320,10 +320,16 @@ export function ContactSection({ initialSummary, onClearInitialSummary }: Contac
                     onChange={(e) => setSelectedMachine(e.target.value)}
                     className="w-full rounded-xl border border-[#dfe3e5] bg-[#fafbfc] px-4 py-3 text-xs font-semibold text-[#141719] outline-none transition focus:border-[#f6c400] focus:bg-white"
                   >
-                    {machinesData.map((m) => (
-                      <option key={m.id} value={m.name}>
-                        {m.name}
-                      </option>
+                    {Array.from(new Set(machinesData.map((m) => m.type))).map((cat) => (
+                      <optgroup key={cat} label={`── ${cat} ──`}>
+                        {machinesData
+                          .filter((m) => m.type === cat)
+                          .map((m) => (
+                            <option key={m.id} value={m.name}>
+                              {m.name}
+                            </option>
+                          ))}
+                      </optgroup>
                     ))}
                     <option value="Paquete Múltiple de Maquinaria">Paquete Múltiple de Maquinaria</option>
                   </select>

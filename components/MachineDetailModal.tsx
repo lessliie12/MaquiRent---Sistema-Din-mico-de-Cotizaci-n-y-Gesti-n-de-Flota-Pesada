@@ -180,6 +180,51 @@ export function MachineDetailModal({ machine, onClose, onAddToQuote }: MachineDe
                 </div>
               )}
 
+              {machine.specs.liftCapacity && (
+                <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
+                    <Scale className="size-3.5 text-[#f6c400]" /> Capacidad Elevación
+                  </div>
+                  <div className="font-bold text-sm text-white">{machine.specs.liftCapacity}</div>
+                </div>
+              )}
+
+              {machine.specs.boomLength && (
+                <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
+                    <Gauge className="size-3.5 text-[#f6c400]" /> Longitud de Pluma
+                  </div>
+                  <div className="font-bold text-sm text-white">{machine.specs.boomLength}</div>
+                </div>
+              )}
+
+              {machine.specs.bladeCapacity && (
+                <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
+                    <Gauge className="size-3.5 text-[#f6c400]" /> Capacidad Hoja / Vertedera
+                  </div>
+                  <div className="font-bold text-sm text-white">{machine.specs.bladeCapacity}</div>
+                </div>
+              )}
+
+              {machine.specs.maxReach && (
+                <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
+                    <Gauge className="size-3.5 text-[#f6c400]" /> Alcance Máximo
+                  </div>
+                  <div className="font-bold text-sm text-white">{machine.specs.maxReach}</div>
+                </div>
+              )}
+
+              {machine.specs.millingWidth && (
+                <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
+                  <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
+                    <Gauge className="size-3.5 text-[#f6c400]" /> Ancho de Corte / Fresado
+                  </div>
+                  <div className="font-bold text-sm text-white">{machine.specs.millingWidth}</div>
+                </div>
+              )}
+
               <div className="rounded-xl bg-[#141719] p-3.5 border border-white/5">
                 <div className="flex items-center gap-2 text-white/50 text-xs mb-1">
                   <Fuel className="size-3.5 text-[#f6c400]" /> Capacidad Tanque

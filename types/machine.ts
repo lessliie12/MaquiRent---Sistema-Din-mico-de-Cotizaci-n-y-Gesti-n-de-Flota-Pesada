@@ -1,4 +1,15 @@
-export type MachineCategory = 'Excavadoras' | 'Cargadores' | 'Volquetas' | 'Compactadores';
+export type MachineCategory =
+  | 'Excavadoras'
+  | 'Tractores Dozer'
+  | 'Cargadores'
+  | 'Retroexcavadoras'
+  | 'Minicargadores'
+  | 'Motoniveladoras'
+  | 'Volquetas y Camiones'
+  | 'Compactadores'
+  | 'Tiendetubos'
+  | 'Manipuladores Telescópicos'
+  | 'Pavimentación y Fresado';
 
 export interface MachineSpecs {
   operatingWeight: string;
@@ -11,6 +22,11 @@ export interface MachineSpecs {
   drumWidth?: string;
   engineModel?: string;
   topSpeed?: string;
+  liftCapacity?: string; // Capacidad de elevación / punto de vuelco (Tiendetubos, manipuladores)
+  boomLength?: string; // Longitud de pluma (Tiendetubos)
+  maxReach?: string; // Alcance máximo horizontal / vertical
+  bladeCapacity?: string; // Capacidad o ancho de hoja vertedera (Dozers, Motoniveladoras)
+  millingWidth?: string; // Ancho de fresado / pavimentación
 }
 
 export interface Machine {
@@ -18,6 +34,7 @@ export interface Machine {
   slug: string;
   name: string;
   type: MachineCategory;
+  subtype: string; // e.g. 'Tiendetubos Pesados', 'Miniexcavadoras', 'Dozers Medianos'
   dailyRate: number; // in COP
   monthlyRate: number; // in COP
   salePrice: string; // informative sale price
@@ -29,6 +46,17 @@ export interface Machine {
   specs: MachineSpecs;
   features: string[];
   idealFor: string[];
+}
+
+export interface CategoryMetadata {
+  id: MachineCategory;
+  name: string;
+  shortName: string;
+  tagline: string;
+  description: string;
+  catUrl: string; // Link to Caterpillar official equipment page
+  subtypes: string[];
+  sampleImage: string;
 }
 
 export interface QuoteItem {
