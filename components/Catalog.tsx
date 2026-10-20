@@ -128,11 +128,12 @@ export function Catalog({ onSelectMachine, onAddToQuote, quotedMachineIds }: Cat
           <div className="inline-flex items-center gap-2 rounded-full bg-[#f6c400]/20 px-3.5 py-1 text-xs font-black uppercase tracking-wider text-[#916c00] mb-3">
             <Sparkles className="size-3.5" /> Flota Oficial Caterpillar® Colombia
           </div>
-          <h2 className="text-3xl font-black tracking-tight sm:text-5xl text-[#141719]">
-            Catálogo de Maquinaria y Equipos
+          <h2 className="text-3xl sm:text-5xl text-[#141719] tracking-tight">
+            <span className="font-serif italic font-normal">Catálogo de</span>{' '}
+            <span className="font-sans font-black tracking-tight">Maquinaria & Equipos</span>
           </h2>
         </div>
-        <p className="max-w-md text-sm leading-relaxed text-[#5a6268]">
+        <p className="max-w-md text-sm leading-relaxed text-[#5a6268] font-sans font-normal">
           Gama completa de equipos pesados y especializados Caterpillar®. Mantenimientos oficiales al día, telemetría Cat Product Link™ y entrega inmediata en obra.
         </p>
       </div>

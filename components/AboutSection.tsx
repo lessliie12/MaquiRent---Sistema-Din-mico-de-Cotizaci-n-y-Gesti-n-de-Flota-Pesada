@@ -12,8 +12,9 @@ export function AboutSection() {
           <div className="inline-flex items-center gap-1.5 rounded-full bg-[#141719] px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#f6c400] mb-4">
             Sobre Maqui-Rent Colombia
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#141719]">
-            Más de una Década Impulsando la Infraestructura del País
+          <h2 className="text-3xl sm:text-5xl tracking-tight text-[#141719]">
+            <span className="font-serif italic font-normal">Más de una Década</span>{' '}
+            <span className="font-sans font-black">Impulsando la Infraestructura</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base leading-relaxed text-[#5a6268]">
             Nacimos con el objetivo de ofrecer a contratistas, consorcios viales y empresas mineras una solución confiable de alquiler de maquinaria pesada Caterpillar®. Eliminamos el sobrecosto de mantenimiento y tiempos muertos mediante tecnología predictiva y operadores altamente calificados.
@@ -27,7 +28,7 @@ export function AboutSection() {
               key={i}
               className="rounded-3xl border border-[#e3e5e7] bg-white p-6 shadow-sm transition hover:shadow-md"
             >
-              <div className="text-3xl sm:text-4xl font-black text-[#141719] tracking-tight">
+              <div className="text-3xl sm:text-4xl font-serif italic font-bold text-[#141719] tracking-tight">
                 <span className="text-[#b08e00]">{stat.value}</span>
               </div>
               <div className="mt-2 text-xs font-bold text-[#141719]">{stat.label}</div>

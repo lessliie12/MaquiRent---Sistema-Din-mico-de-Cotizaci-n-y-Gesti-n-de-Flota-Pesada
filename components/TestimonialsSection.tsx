@@ -11,8 +11,9 @@ export function TestimonialsSection() {
           <div className="inline-flex items-center gap-1.5 rounded-full bg-[#f6c400]/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#9e7600] mb-3">
             Casos de Éxito y Confianza
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-[#141719]">
-            Respaldando a los Mayores Constructores de Colombia
+          <h2 className="text-3xl sm:text-5xl tracking-tight text-[#141719]">
+            <span className="font-serif italic font-normal">Respaldando a los</span>{' '}
+            <span className="font-sans font-black">Mayores Constructores</span>
           </h2>
           <p className="mt-3 text-sm text-[#687076]">
             Lo que dicen los directores de obra y gerentes de proyectos que confían en Maqui-Rent.
@@ -33,9 +34,9 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
-                <Quote className="size-8 text-[#dfe3e5] mb-3" />
+                <Quote className="size-8 text-[#f6c400]/40 mb-3" />
 
-                <p className="text-xs leading-relaxed text-[#4b5563] italic">
+                <p className="text-sm leading-relaxed text-[#2d3748] font-serif italic">
                   "{t.comment}"
                 </p>
               </div>

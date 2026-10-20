@@ -77,8 +77,10 @@ export function RentalCalculator({ onApplyToQuote, onScrollToContact }: RentalCa
             <Calculator className="size-3.5" />
             Simulador Interactivo de Tarifas
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Calcula el Presupuesto de tu Obra en Vivo
+          <h2 className="text-3xl sm:text-5xl tracking-tight text-white">
+            <span className="font-serif italic font-normal text-white/90">Calcula el</span>{' '}
+            <span className="font-sans font-black">Presupuesto de tu Obra</span>{' '}
+            <span className="font-serif italic font-semibold text-[#f6c400]">en Vivo</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-white/60">
             Ajusta los días, selecciona tu ciudad en Colombia y agrega operador o seguro.
@@ -281,7 +283,7 @@ export function RentalCalculator({ onApplyToQuote, onScrollToContact }: RentalCa
             <div className="rounded-2xl bg-[#141719] p-5 border border-white/10 mb-6">
               <div className="flex items-baseline justify-between">
                 <span className="text-xs font-bold text-white/70 uppercase">Total Estimado</span>
-                <span className="text-2xl sm:text-3xl font-black text-[#f6c400]">
+                <span className="text-2xl sm:text-3xl font-serif italic font-bold text-[#f6c400] tracking-tight">
                   {formatCOP(totalEstimado)}
                 </span>
               </div>

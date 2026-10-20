@@ -46,15 +46,16 @@ export function ServicesSection({ onScrollToContact }: ServicesSectionProps) {
             <div className="inline-flex items-center gap-1.5 rounded-full bg-[#f6c400]/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#f6c400] mb-4">
               Mucho más que alquiler
             </div>
-            <h2 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-              Garantizamos Cero Paradas en tu Operación
+            <h2 className="text-3xl sm:text-5xl tracking-tight leading-tight text-white">
+              <span className="font-serif italic font-normal text-white/90">Garantizamos</span>{' '}
+              <span className="font-sans font-black">Cero Paradas en tu Operación</span>
             </h2>
-            <p className="mt-6 text-sm sm:text-base leading-relaxed text-white/60">
+            <p className="mt-6 text-sm sm:text-base leading-relaxed text-white/60 font-sans">
               Sabemos que cada hora de máquina parada cuesta millones. Nuestro ecosistema de soporte integral
               asegura que tu proyecto vial, minero o de infraestructura avance sin retrasos.
             </p>
 
-            <div className="mt-8 space-y-3 text-xs text-white/80">
+            <div className="mt-8 space-y-3 text-xs text-white/80 font-sans">
               <div className="flex items-center gap-2">
                 <CheckCircle className="size-4 text-[#f6c400]" />
                 <span>Asistencia técnica 24 horas los 7 días de la semana</span>
@@ -84,7 +85,7 @@ export function ServicesSection({ onScrollToContact }: ServicesSectionProps) {
                   className="group rounded-3xl border border-white/10 bg-[#141719] p-6 transition duration-300 hover:border-[#f6c400]/50 hover:bg-[#181c1f]"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black text-[#f6c400]">{service.number}</span>
+                    <span className="font-serif italic text-3xl font-bold text-[#f6c400]">{service.number}</span>
                     <div className="grid size-10 place-items-center rounded-xl bg-white/5 text-[#f6c400] transition group-hover:scale-110 group-hover:bg-[#f6c400] group-hover:text-[#141719]">
                       <Icon className="size-5" />
                     </div>

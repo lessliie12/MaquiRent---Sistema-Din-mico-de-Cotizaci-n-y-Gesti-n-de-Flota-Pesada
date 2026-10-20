@@ -125,10 +125,11 @@ export function ContactSection({ initialSummary, onClearInitialSummary }: Contac
           <div className="inline-flex items-center gap-1.5 rounded-full bg-[#f6c400]/20 px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#9e7600] mb-4">
             Atención Inmediata
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#141719]">
-            Radica tu Solicitud de Maquinaria
+          <h2 className="text-3xl sm:text-5xl tracking-tight text-[#141719]">
+            <span className="font-serif italic font-normal">Radica tu</span>{' '}
+            <span className="font-sans font-black">Solicitud de Maquinaria</span>
           </h2>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#687076]">
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#687076] font-sans">
             Diligencia el formulario y uno de nuestros ingenieros comerciales te enviará la propuesta formal con disponibilidad y tarifas en menos de 2 horas.
           </p>
 

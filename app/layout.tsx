@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
+
 export const metadata: Metadata = {
   title: 'Maqui-Rent Colombia | Alquiler de Maquinaria Pesada CAT®',
   description: 'Alquiler y venta de maquinaria pesada Caterpillar en Colombia: excavadoras, cargadores frontales, volquetas articuladas y rodillos compactadores con operador certificado y asistencia técnica 24/7 en obra.',
@@ -54,6 +55,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@700;900&family=Italiana&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="antialiased bg-[#f4f5f6] text-[#141719] font-sans selection:bg-[#f6c400] selection:text-[#141719]">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
@@ -61,3 +70,4 @@ export default function RootLayout({
     </html>
   )
 }
+

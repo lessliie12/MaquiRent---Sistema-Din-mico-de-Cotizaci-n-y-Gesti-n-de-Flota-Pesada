@@ -23,8 +23,9 @@ export function FAQSection({ onScrollToContact }: FAQSectionProps) {
             <HelpCircle className="size-3.5" />
             Resolución de Dudas Frecuentes
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#141719]">
-            Preguntas Frecuentes de Alquiler
+          <h2 className="text-3xl sm:text-5xl tracking-tight text-[#141719]">
+            <span className="font-serif italic font-normal">Preguntas Frecuentes</span>{' '}
+            <span className="font-sans font-black">de Alquiler</span>
           </h2>
           <p className="mt-3 text-sm text-[#687076]">
             Todo lo que necesitas saber sobre contratos, fletes, pólizas y mantenimiento preventivo en obra.
